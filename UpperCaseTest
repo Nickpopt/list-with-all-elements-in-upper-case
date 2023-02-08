@@ -1,0 +1,10 @@
+import org.junit.Test
+import static org.junit.Assert.*;
+public class UpperCaseTest{
+  @Test public void testList(){
+    List inputl = Arrays.asList("a", "b", "c");
+    List outputl = ListTransformer.transformList(inputl);
+    List exoutputl = Arrays.asList("A", "B", "C");
+    assertEquals(outputl, exoutputl);
+  }
+}
